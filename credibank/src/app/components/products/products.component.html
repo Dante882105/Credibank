@@ -1,10 +1,25 @@
+<div id="search">
+    <div class="container">
+        <input type="text">
+        <input type="button" value="Search" class="button">
+    </div>
+</div>
 <section id="galery">
-    <div class="product">
-        <img src="../../../assets/slider/prueba.jpg" alt="">
+    <div class="product" *ngFor="let data of this.data" (mouseover)="this.show_hide(message)" (mouseout)="this.show_hide(message)">
+        <img *ngIf="data.images; else other" src={{data.images[0]}} alt="">
         <div class="data">
-            <h2>Títle</h2>
-            <strong>Description</strong>
-            <strong>Price</strong>
+            <h4>{{data.title}}</h4>
+            <strong>{{data.description}}</strong>
+            <strong>$ {{data.price}}</strong>
+        </div>
+        <ng-template #other>
+            <img src="{{data.image}}" alt="">
+        </ng-template>
+        <div class="message hide" #message>
+            <strong>add to cart</strong>
+            <button (click)="this.save_product(data.id)">
+                <img src="../../../assets/iconos/carrito-de-compras.png" alt="">
+            </button>
         </div>
     </div>
 </section>

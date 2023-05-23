@@ -15,7 +15,7 @@
 .flex-row{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: end;
 }
 
 .flex-column{
@@ -27,16 +27,17 @@
     margin: 0%;
 }
 
-nav{
+#navbar{
     background-color: #5a7fb5;
     height: 10vh;
+    width: 100%;
 }
 
 #navbar ul{
     padding: 0;
 }
 
-#navbar ul li{
+#navbar ul li, .home-button{
     text-align: center;
     width: 80px;
     height: 10vh;
@@ -44,7 +45,7 @@ nav{
     margin-left: 15px;
 }
 
-#navbar ul li img{
+#navbar ul li img, .home-button>img{
     height: 40px;
     width: 40px;
     margin: auto;
@@ -52,6 +53,7 @@ nav{
 
 .button-nav{
     cursor: pointer;
+    position: relative;
 }
 
 .buscador{
@@ -61,30 +63,12 @@ nav{
     margin-top: 2.5%;
 }
 
-input[type=text]{
-    padding-left: 5px;
-    height: 30px;
-    width: 40%;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
-    color: #072146;
-}
-
-input[type=button]{
-    margin: 0;
-    padding: 5px;
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
-    background-color: #072146;
-    height: 34px;
-}
-
 .counter{
     width: 20px;
     height: 20px;
     position: absolute;
-    top: 5%;
-    left: 17%;
+    top: 58%;
+    left: 67%;
     border-radius: 50px;
     background-color: red;
     color: beige;
@@ -96,7 +80,7 @@ input[type=button]{
 }
 
 .active{
-    background-color: #072146;
+    background-color: #076dfc;
 }
 
 @media(max-width:1024px){

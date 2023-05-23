@@ -1,9 +1,9 @@
 <section class="shopping">
-    <div class="container">
-        <img class="miniature" src="../../../assets/slider/prueba.jpg" alt="">
+    <div class="container" *ngFor="let data of this.local_storage">
+        <img class="miniature" src={{data.images[0]}} alt="">
         <div class="description">
-            <h3>Prueba</h3>
-            <strong>Prueba de Texto</strong>
+            <h3>{{data.title}}</h3>
+            <strong>$ {{data.price}}</strong>
             <div class="button">
                 <button>
                     <img src="../../../assets/iconos/basura.png" alt="">

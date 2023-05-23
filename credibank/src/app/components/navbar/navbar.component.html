@@ -1,27 +1,23 @@
 <nav id="navbar" class="flex-row">
-    <div class="first">
+    <div class="flex-column button-nav first">
+        <div class="home-button" routerLink="home" routerLinkActive="active">
+            <img src="../../../assets/iconos/bbva-2.svg"alt="">
+            <strong>Banck Inc</strong>
+        </div>
+    </div>
+    <div class="second">
         <ul class="flex-row margin-none">
-            <li class="flex-column">
-                <img src="../../../assets/iconos/bbva-2.svg"alt="">
-                <strong>Banck Inc</strong>
-            </li>
-            <li class="flex-column button-nav" routerLink="home" routerLinkActive="active">
-                <img src="../../../assets/iconos/Real_Estate_(101).jpg" alt="">
-                <strong>Home</strong>
+            <li class="flex-column button-nav" routerLink="products" routerLinkActive="active">
+                <img src="../../../assets/iconos/products.png" alt="">
+                <strong>Products</strong>
             </li>
             <li class="flex-column button-nav" routerLink="shopping-cart" routerLinkActive="active">
-                <img src="../../../assets/iconos/basket-01_generated.jpg" alt="">
-                <strong>Shopping</strong>
+                <img src="../../../assets/iconos/carrito-de-compras.png" alt="">
+                <strong>Cart</strong>
                 <div class="counter">
-                    <strong>0</strong>
+                    <strong>{{this.number}}</strong>
                 </div>
             </li>
         </ul>
-    </div>
-    <div class="second">
-        <div class="buscador">
-            <input type="text">
-            <input type="button" value="Search" class="button">
-        </div>
     </div>
 </nav>

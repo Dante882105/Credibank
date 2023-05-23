@@ -1,21 +1,25 @@
 .shopping{
     height: 87vh;
+    overflow-y: scroll;
     padding: 2%;
     box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .container{
-    width: 20%;
-    height: 100px;
-    padding: 5px 3px;
+    width: 30%;
+    height: 15%;
+    padding: 2px 3px;
+    margin: 2px;
     border: 1px black solid;
     display: flex;
     flex-direction: row;
 }
 
 .miniature{
-    width: 40%;
-    height: 80px;
+    width: 30%;
     margin: 10px 3px;
 }
 
@@ -24,18 +28,19 @@
 }
 
 .button{
-    width: 60%;
+    width: 120px;
     margin-left: 38%;
 }
 
 .button button{
     width: 100%;
-    height: 30px;
+    height: 40px;
     margin: 2px 4px;
     background-color:rgb(202, 94, 5);
     cursor: pointer;
 }
 
 .button button>img{
-    width: 30%;
+    width: 30px;
+    height: 30px;
 }

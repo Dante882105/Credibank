@@ -5,6 +5,7 @@
 
 .home{
     height: 87vh;
+    overflow-y: scroll;
 }
 
 #slider{
@@ -58,19 +59,19 @@
     width: 45px;
     right: 0%;
 }
-.category{
+#category{
     width: 95%;
     margin: 0 auto;
     box-sizing: border-box;
 }
 
-.category ul{
+#category>ul{
     display: flex;
     flex-direction: row;
     padding: 0;
 }
 
-.category ul li{
+#category ul li{
     width: 25%;
     height: 80px;
     margin: 2px;
